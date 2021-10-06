@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Bootstrap starter</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="mt-5 p-3 border w-50 mx-auto">
+        <form class="todo-form mb-3" autocomplete="off">
+          <input
+            class="form-control todo-input"
+            type="text"
+            placeholder="to do"
+            required
+          />
+        </form>
+        <ul class="todo-list list-group mb-4"></ul>
+        <div class="d-flex justify-content-between">
+          <p><span class="all-count"></span> all</p>
+          <p><span class="complated-count"></span> complated</p>
+          <p><span class="uncomplated-count"></span> uncomplateds</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Templates -->
+    <template id="todo-item--template">
+      <li class="todo-item d-flex justify-content-between align-items-center">
+        <div>
+          <input class="todo-input-complete" id="complated" type="checkbox" />
+          <span class="todo-item-complete-text"></span>
+        </div>
+
+        <button class="todo-item-delete-btn btn btn-primary mb-3">
+          Delete
+        </button>
+      </li>
+    </template>
+
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
