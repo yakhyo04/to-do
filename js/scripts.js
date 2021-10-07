@@ -34,6 +34,8 @@ function renderTodos(todosArr, element){
             }
 
             window.localStorage.setItem('todos', JSON.stringify(todos))
+
+           renderTodos(todos, list)
         })
 
         deleteBtn.addEventListener('click', (e)=>{
